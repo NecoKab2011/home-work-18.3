@@ -1,0 +1,23 @@
+#categories{
+    display: flex;
+    gap: 40px;
+    font-style: italic;
+}
+
+.under-item{
+    color: chocolate;
+    font-style: normal;
+}
+
+#gallery {
+    display: flex;
+    gap: 30px;
+  }
+  
+  img {
+    display: block;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    outline: 3px solid black;
+  }
