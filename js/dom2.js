@@ -42,3 +42,18 @@ const listImg = document.querySelector("#gallery");
 for (const { url, alt } of images) {
   listImg.insertAdjacentHTML("beforeend", `<img src="${url}" alt="${alt}">`);
 }
+
+let counterValue = 0;
+const valueSpan = document.querySelector("#value");
+const decrementBtn = document.querySelector(`[data-action="decrement"]`);
+const incrementBtn = document.querySelector(`[data-action="increment"]`);
+
+const decrement = (counterValue, valueSpan) => {
+  counterValue -= 1;
+  valueSpan.textContent = counterValue;
+};
+
+const increment = (counterValue, valueSpan) => {
+  counterValue += 1;
+  valueSpan.textContent = counterValue;
+};
