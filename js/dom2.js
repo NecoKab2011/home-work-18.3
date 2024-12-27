@@ -48,12 +48,13 @@ const valueSpan = document.querySelector("#value");
 const decrementBtn = document.querySelector(`[data-action="decrement"]`);
 const incrementBtn = document.querySelector(`[data-action="increment"]`);
 
-const decrement = (counterValue, valueSpan) => {
+const decrFunc = (counterValue, valueSpan) => {
   counterValue -= 1;
   valueSpan.textContent = counterValue;
 };
 
-const increment = (counterValue, valueSpan) => {
+const incrFunc = (counterValue, valueSpan) => {
   counterValue += 1;
   valueSpan.textContent = counterValue;
 };
+
